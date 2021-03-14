@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+  }
+  body{
+    font-family:arial,sans-serif;
+    font-size:100%;
+    margin:3em;
+    background: rgb(240,239,235);
+    color:#000;
+  }
+  h1,p{
+    font-family:"Reenie Beanie", arial, sans-serif;
+    font-size:56px ;
+  }
+  ul,li{
+    list-style:none;
+    display: flex;
+  }
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    overflow:hidden;
+    padding:2em;
+  }
+  ul .blue{
+    text-decoration:none;
+    color:#000;
+    background: rgb(188,212,230);
+    display:block;
+    height:15em;
+    width:15em;
+    padding:1em;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  ul .pink{
+    text-decoration:none;
+    color:#000;
+    background:rgb(250,210,225);
+    display:block;
+    height:15em;
+    width:15em;
+    padding:1em;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  ul .green{
+    text-decoration:none;
+    color:#000;
+    background:rgb(197,222,221);
+    display:block;
+    height:15em;
+    width:15em;
+    padding:1em;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.4);
+  }
+  ul .yellow{
+    text-decoration:none;
+    color:#000;
+    background:rgb(237,220,210);
+    display:block;
+    height:15em;
+    width:15em;
+    padding:1em;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  ul li{
+    margin:1em;
+    float:left;
+  }
+
+  ul li h2{
+    font-family:"Montserrat";
+    font-size:22px;
+    font-weight:bold;
+    padding-bottom:10px;
+  }
+  ul li p{
+    font-family:"Montserrat-light";
+    font-size:20px;
+  }
