@@ -11,73 +11,65 @@
   }
   h1,p{
     font-family:"Reenie Beanie", arial, sans-serif;
-    font-size:56px ;
+    font-size:4em ;
   }
-  ul,li{
-    list-style:none;
-    display: flex;
+ 
+  /* This is the container */
+  .container ul{ 
+    display: grid;	  	  
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(6, 250px);
+    grid-gap: 1rem; 
+    grid-auto-flow: dense;
   }
-  ul{
-    display: flex;
-    flex-wrap: wrap;
-    overflow:hidden;
-    padding:2em;
+  .container > li {
+    border: 1px solid #E2E2E2;
+    border-radius: .5rem;
   }
-  ul .blue{
-    text-decoration:none;
-    color:#000;
+
+  /* Every item in the container */
+  .container ul .sticker{
+    color:#000;    
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.4);
+    padding:1em;
+    display:block;
+  }
+
+  .container ul .blue{
     background: rgb(188,212,230);
-    display:block;
-    height:15em;
-    width:15em;
-    padding:1em;
-    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.4);
+    grid-column: span 2;
+    grid-row: span 1;
   }
 
-  ul .pink{
-    text-decoration:none;
-    color:#000;
+  .container ul .pink{
     background:rgb(250,210,225);
-    display:block;
-    height:15em;
-    width:15em;
-    padding:1em;
-    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.4);
+    grid-column: span 1;
+    grid-row: span 1;
   }
 
-  ul .green{
-    text-decoration:none;
-    color:#000;
+  .container ul .green{
     background:rgb(197,222,221);
-    display:block;
-    height:15em;
-    width:15em;
-    padding:1em;
-    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.4);
+    grid-column: span 1;
+    grid-row: span 1;
   }
-  ul .yellow{
-    text-decoration:none;
-    color:#000;
+  .container ul .yellow{
     background:rgb(237,220,210);
-    display:block;
-    height:15em;
-    width:15em;
-    padding:1em;
-    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.4);
+    grid-column: span 1;
+    grid-row: span 2;
   }
 
-  ul li{
-    margin:1em;
-    float:left;
-  }
-
-  ul li h2{
+  .container ul li h2{
     font-family:"Montserrat";
     font-size:22px;
     font-weight:bold;
     padding-bottom:10px;
   }
-  ul li p{
+  .container ul li p{
     font-family:"Montserrat-light";
     font-size:20px;
+  }
+
+  /* Effects */
+  .container ul .sticker:hover{
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
   }
